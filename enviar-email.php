@@ -5,11 +5,11 @@
     use PHPMailer\PHPMailer\Exception;
 
     require_once "Mensagem.php";
-    require "../vendor/PHPMailer/src/PHPMailer.php";
-    require "../vendor/PHPMailer/src/Exception.php";
-    require "../vendor/PHPMailer/src/SMTP.php";
-    require "../vendor/PHPMailer/src/POP3.php";
-    require "../vendor/PHPMailer/src/OAuth.php";
+    require "vendor/PHPMailer/src/PHPMailer.php";
+    require "vendor/PHPMailer/src/Exception.php";
+    require "vendor/PHPMailer/src/SMTP.php";
+    require "vendor/PHPMailer/src/POP3.php";
+    require "vendor/PHPMailer/src/OAuth.php";
     
     $mensagem = new Mensagem($_POST['destinatario'],$_POST['assunto'],$_POST['mensagem'],$_POST['nome']);
 
