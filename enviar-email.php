@@ -46,7 +46,10 @@
         $mail->send();
         header("Location:mensagem-enviada.php");
         } catch (Exception $e) {
-        header("Location:mensagem-enviada.php?erro");
+            echo "<pre>";
+            print_r($e);
+            echo "</pre>";
+            header("Location:mensagem-enviada.php?erro");
     }
 
 ?>
